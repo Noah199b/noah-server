@@ -2,13 +2,35 @@ plugins {
     id 'java'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+group 'com.noah1996'
+version '1.0.0'
 
 repositories {
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/spring/'
+    }
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    // Spring 全家桶
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.3.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version: '2.3.3.RELEASE'
+    // compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-elasticsearch', version: '2.3.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.3.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot', version: '2.3.3.RELEASE'
+    compile group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.3.3.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-logging', version: '2.3.3.RELEASE'
+    // Mysql 数据库
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.21'
+    compile group: 'com.alibaba', name: 'druid', version: '1.1.23'
+    // Elasticsearch
+    // compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-high-level-client', version: '7.9.1'
+    // compile group: 'org.elasticsearch.client', name: 'elasticsearch-rest-client', version: '7.9.1'
 }

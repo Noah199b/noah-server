@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba:druid:1.1.23">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/com.alibaba/druid/1.1.23/e9de7bccb6ca18bac1e64fd4f94c697a28e520be/druid-1.1.23.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/caches/modules-2/files-2.1/com.alibaba/druid/1.1.23/1cf2b30956df4127a24328fcf990d0338573aa86/druid-1.1.23-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
